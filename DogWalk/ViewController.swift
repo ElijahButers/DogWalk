@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
     
+    @IBOutlet weak var tableView: UITableView!
+    
     var walks: Array<Date> = []
 
     override func viewDidLoad() {
