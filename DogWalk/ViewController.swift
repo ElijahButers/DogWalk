@@ -56,6 +56,8 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     @IBAction func add(_ sender: AnyObject) {
         
+        walks.append(Date())
+        tableView.reloadData()
     }
 }
 
