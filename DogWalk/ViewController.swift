@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
+    
+    var marks: Array<Date> = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
