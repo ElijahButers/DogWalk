@@ -46,6 +46,11 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.textLabel?.text = dateFormatter.string(from: date)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        return "List of walks"
+    }
 
 
 }
