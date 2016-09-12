@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Dog Walk-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DogWalk" customModuleProvider="target" sceneMemberID="viewController">
@@ -42,7 +42,7 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gw3-o1-5JN" secondAttribute="bottom" constant="67" id="vvu-Hk-4Cl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nnz-jF-ne1">
+                    <navigationItem key="navigationItem" title="Dog Walk" id="nnz-jF-ne1">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Clu-uZ-LSC">
                             <connections>
                                 <action selector="add:" destination="BYZ-38-t0r" id="aLh-Wc-Szt"/>
