@@ -52,6 +52,10 @@ class ViewController: UIViewController, UITableViewDataSource {
         return "List of walks"
     }
 
-
+    // MARK: - Actions
+    
+    @IBAction func add(_ sender: AnyObject) {
+        
+    }
 }
 
