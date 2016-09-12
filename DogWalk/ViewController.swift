@@ -13,6 +13,13 @@ class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     var walks: Array<Date> = []
+    
+    lazy var dateFormatter: DateFormatter = {
+        var formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .medium
+        return formatter
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
