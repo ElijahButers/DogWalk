@@ -38,7 +38,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gw3-o1-5JN" secondAttribute="bottom" constant="67" id="vvu-Hk-4Cl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="nnz-jF-ne1"/>
+                    <navigationItem key="navigationItem" id="nnz-jF-ne1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Clu-uZ-LSC"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
