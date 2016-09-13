@@ -13,6 +13,7 @@
 		E211CF2E1D86C646008ABA27 /* DogWalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E211CF2C1D86C646008ABA27 /* DogWalk.xcdatamodeld */; };
 		E211CF301D86C646008ABA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E211CF2F1D86C646008ABA27 /* Assets.xcassets */; };
 		E211CF331D86C646008ABA27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E211CF311D86C646008ABA27 /* LaunchScreen.storyboard */; };
+		E2DA84D11D87D9D700EAE77E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA84D01D87D9D700EAE77E /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E211CF2F1D86C646008ABA27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E211CF321D86C646008ABA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E211CF341D86C646008ABA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2DA84D01D87D9D700EAE77E /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E211CF251D86C646008ABA27 /* AppDelegate.swift */,
 				E211CF271D86C646008ABA27 /* ViewController.swift */,
 				E211CF291D86C646008ABA27 /* Main.storyboard */,
+				E2DA84D01D87D9D700EAE77E /* CoreDataStack.swift */,
 				E211CF2F1D86C646008ABA27 /* Assets.xcassets */,
 				E211CF311D86C646008ABA27 /* LaunchScreen.storyboard */,
 				E211CF341D86C646008ABA27 /* Info.plist */,
@@ -142,6 +145,7 @@
 				E211CF281D86C646008ABA27 /* ViewController.swift in Sources */,
 				E211CF2E1D86C646008ABA27 /* DogWalk.xcdatamodeld in Sources */,
 				E211CF261D86C646008ABA27 /* AppDelegate.swift in Sources */,
+				E2DA84D11D87D9D700EAE77E /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +305,7 @@
 				E211CF391D86C646008ABA27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
