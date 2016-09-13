@@ -12,6 +12,7 @@
 		E211CF2B1D86C646008ABA27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E211CF291D86C646008ABA27 /* Main.storyboard */; };
 		E211CF301D86C646008ABA27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E211CF2F1D86C646008ABA27 /* Assets.xcassets */; };
 		E211CF331D86C646008ABA27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E211CF311D86C646008ABA27 /* LaunchScreen.storyboard */; };
+		E2926BF11D8828B300A9F70C /* DogWalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2926BEF1D8828B300A9F70C /* DogWalk.xcdatamodeld */; };
 		E2DA84D11D87D9D700EAE77E /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DA84D01D87D9D700EAE77E /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		E211CF2F1D86C646008ABA27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E211CF321D86C646008ABA27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E211CF341D86C646008ABA27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2926BF01D8828B300A9F70C /* DogWalk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DogWalk.xcdatamodel; sourceTree = "<group>"; };
 		E2DA84D01D87D9D700EAE77E /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 				E211CF2F1D86C646008ABA27 /* Assets.xcassets */,
 				E211CF311D86C646008ABA27 /* LaunchScreen.storyboard */,
 				E211CF341D86C646008ABA27 /* Info.plist */,
+				E2926BEF1D8828B300A9F70C /* DogWalk.xcdatamodeld */,
 			);
 			path = DogWalk;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E211CF281D86C646008ABA27 /* ViewController.swift in Sources */,
+				E2926BF11D8828B300A9F70C /* DogWalk.xcdatamodeld in Sources */,
 				E211CF261D86C646008ABA27 /* AppDelegate.swift in Sources */,
 				E2DA84D11D87D9D700EAE77E /* CoreDataStack.swift in Sources */,
 			);
@@ -304,6 +308,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E2926BEF1D8828B300A9F70C /* DogWalk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2926BF01D8828B300A9F70C /* DogWalk.xcdatamodel */,
+			);
+			currentVersion = E2926BF01D8828B300A9F70C /* DogWalk.xcdatamodel */;
+			path = DogWalk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E211CF1A1D86C646008ABA27 /* Project object */;
 }
