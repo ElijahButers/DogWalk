@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     var walks: Array<Date> = []
+    var managedContext: NSManagedObjectContext!
     
     lazy var dateFormatter: DateFormatter = {
         var formatter = DateFormatter()
