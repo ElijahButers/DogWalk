@@ -11,4 +11,5 @@ import CoreData
 
 class CoreDataStack {
     
+    let modelName = "Dog Walk"
 }
