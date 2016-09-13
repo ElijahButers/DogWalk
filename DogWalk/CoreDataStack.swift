@@ -17,4 +17,33 @@ class CoreDataStack {
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return urls[urls.count-1] as NSURL
     }()
+    
+    // MARK: - Core Data stack
+    
+    lazy var context: NSManagedObjectContext = {
+        
+        var managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+        managedObjectContext.persistentStoreCoordinator = self.psc
+        return managedObjectContext
+    }()
+    
+    fileprivate var psc: NSPersistentStoreCoordinator {
+        
+        let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
+        let url = self.applicationDocumentsDirectory.appendingPathComponent(self.modelName)
+        
+        do {
+            let options = [NSMigratePersistentStoresAutomaticallyOption : true]
+            try coordinator.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: url, options: options)
+        } catch {
+            print("Error adding persistnet store.")
+        }
+        return coordinator
+    }
+    
+    fileprivate lazy var managedObjectModel: NSManagedObjectModel = {
+        
+        let modelURL = Bundle.main.url(forResource: self.modelName, withExtension: "momd")!
+        return NSManagedObjectModel(contentsOf: modelURL)!
+    }()
 }
