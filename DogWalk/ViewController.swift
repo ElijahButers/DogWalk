@@ -27,6 +27,26 @@ class ViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        let dogEntity = NSEntityDescription.entity(forEntityName: "Dog", in: managedContext)
+        
+        let dogName = "Fido"
+        let dogFetch: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Dog")
+        dogFetch.predicate = NSPredicate(format: "name == %@", dogName)
+        
+        do {
+            let results = try managedContext.fetch(dogFetch) as! [Dog]
+            
+            if results.сount > 0 {
+                currentDog = results.first
+            } else {
+                currentDog = Dog(entity: dogEntity!, insertInto: managedContext)
+                currentDog.name = dogName
+                try managedContext.save()
+            }
+        } catch let error as NSError {
+            print("Error: \(error)" + "description \(error.localizedDescription)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
