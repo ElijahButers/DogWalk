@@ -46,4 +46,16 @@ class CoreDataStack {
         let modelURL = Bundle.main.url(forResource: self.modelName, withExtension: "momd")!
         return NSManagedObjectModel(contentsOf: modelURL)!
     }()
+    
+    func saveContext() {
+        
+        if context.hasChanges {
+            do {
+                try context.save()
+            } catch let error as NSError {
+                print("Error: \(error.localizedDescription)")
+                abort()
+            }
+        }
+    }
 }
