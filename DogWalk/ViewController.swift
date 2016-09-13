@@ -13,7 +13,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var walks: Array<Date> = []
+    var currentDog: Dog!
     var managedContext: NSManagedObjectContext!
     
     lazy var dateFormatter: DateFormatter = {
