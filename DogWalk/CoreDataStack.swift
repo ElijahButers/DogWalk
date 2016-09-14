@@ -11,7 +11,7 @@ import CoreData
 
 class CoreDataStack {
     
-    let modelName = "Dog Walk"
+    let modelName = "DogWalk"
     
     lazy var applicationDocumentsDirectory: NSURL = {
         let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)

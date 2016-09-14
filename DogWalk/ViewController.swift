@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDataSource {
         do {
             let results = try managedContext.fetch(dogFetch) as! [Dog]
             
-            if results.сount > 0 {
+            if results.count > 0 {
                 currentDog = results.first
             } else {
                 currentDog = Dog(entity: dogEntity!, insertInto: managedContext)
