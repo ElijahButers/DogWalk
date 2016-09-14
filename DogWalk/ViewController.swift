@@ -73,6 +73,11 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         return "List of walks"
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        
+        return true
+    }
 
     // MARK: - Actions
     
