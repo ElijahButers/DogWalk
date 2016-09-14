@@ -78,6 +78,15 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     @IBAction func add(_ sender: AnyObject) {
         
+        //Insert a new Walk entity into Core Data
+        let walkEntity = NSEntityDescription.entity(forEntityName: "Walk", in: managedContext)
+        let walk = Walk(entity: walkEntity!, insertInto: managedContext)
+        walk.date = Date() as NSDate?
+        
+        //Insert the new Walk into the Dog's walks set
+        let walks = currentDog.walks?.mutableCopy() as? NSMutableOrderedSet
+        walks?.add(walk)
+        
         tableView.reloadData()
     }
 }
