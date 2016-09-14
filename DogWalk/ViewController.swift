@@ -78,6 +78,9 @@ class ViewController: UIViewController, UITableViewDataSource {
         
         return true
     }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    }
 
     // MARK: - Actions
     
