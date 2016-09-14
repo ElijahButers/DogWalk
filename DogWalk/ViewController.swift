@@ -64,8 +64,8 @@ class ViewController: UIViewController, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as UITableViewCell
-        let date = walks[indexPath.row]
-        cell.textLabel?.text = dateFormatter.string(from: date)
+        let walk = currentDog.walks![indexPath.row] as! Walk
+        cell.textLabel?.text = dateFormatter.string(from: walk.date as! Date)
         return cell
     }
     
