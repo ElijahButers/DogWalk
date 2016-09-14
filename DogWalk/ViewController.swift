@@ -87,6 +87,15 @@ class ViewController: UIViewController, UITableViewDataSource {
         let walks = currentDog.walks?.mutableCopy() as? NSMutableOrderedSet
         walks?.add(walk)
         
+        currentDog.walks = walks?.copy() as? NSOrderedSet
+        
+        //Save the managed object context
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Could not save: \(error)")
+        }
+        
         tableView.reloadData()
     }
 }
