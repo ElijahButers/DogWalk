@@ -80,6 +80,21 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == UITableViewCellEditingStyle.delete {
+            
+            let walkToRemove = currentDog.walks![indexPath.row] as! Walk
+            
+            managedContext.delete(walkToRemove)
+            
+            do {
+                try managedContext.save()
+            } catch let error as NSError {
+                print("Could not save: \(error)")
+            }
+        }
+        
+        tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
     }
 
     // MARK: - Actions
